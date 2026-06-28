@@ -39,6 +39,13 @@
     color: var(--slate); background: var(--bg); border: 1px solid var(--line); border-radius: 8px;
     padding: 9px 11px; word-break: break-all; cursor: text;
   }
+  h2 { font-size: 16px; font-weight: 600; letter-spacing: -0.01em; margin: 64px 0 18px; }
+  .icons { display: grid; gap: 14px; grid-template-columns: 1fr; }
+  @media (min-width: 560px) { .icons { grid-template-columns: 1fr 1fr; } }
+  .irow { display: flex; align-items: center; gap: 14px; border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 12px 14px; }
+  .irow img { width: 26px; height: 26px; flex: 0 0 26px; }
+  .irow .col { min-width: 0; flex: 1; }
+  .irow .name { font-size: 13px; font-weight: 600; margin: 0 0 6px; }
   footer { margin-top: 56px; color: var(--slate); font-size: 13px; }
   a { color: var(--ink); }
 </style>
@@ -68,6 +75,52 @@
         <div class="meta">
           <p class="label">White logo <span>— for dark backgrounds</span></p>
           <input class="url" value="https://devman-011.github.io/LM-Logo/latent_logo_white.png" readonly onclick="this.select()">
+        </div>
+      </div>
+    </div>
+
+    <h2>Social icons (SVG)</h2>
+    <div class="icons">
+      <div class="irow">
+        <img src="icons/facebook.svg" alt="Facebook">
+        <div class="col">
+          <p class="name">Facebook</p>
+          <input class="url" value="https://devman-011.github.io/LM-Logo/icons/facebook.svg" readonly onclick="this.select()">
+        </div>
+      </div>
+      <div class="irow">
+        <img src="icons/instagram.svg" alt="Instagram">
+        <div class="col">
+          <p class="name">Instagram</p>
+          <input class="url" value="https://devman-011.github.io/LM-Logo/icons/instagram.svg" readonly onclick="this.select()">
+        </div>
+      </div>
+      <div class="irow">
+        <img src="icons/linkedin.svg" alt="LinkedIn">
+        <div class="col">
+          <p class="name">LinkedIn</p>
+          <input class="url" value="https://devman-011.github.io/LM-Logo/icons/linkedin.svg" readonly onclick="this.select()">
+        </div>
+      </div>
+      <div class="irow">
+        <img src="icons/youtube.svg" alt="YouTube">
+        <div class="col">
+          <p class="name">YouTube</p>
+          <input class="url" value="https://devman-011.github.io/LM-Logo/icons/youtube.svg" readonly onclick="this.select()">
+        </div>
+      </div>
+      <div class="irow">
+        <img src="icons/tiktok.svg" alt="TikTok">
+        <div class="col">
+          <p class="name">TikTok</p>
+          <input class="url" value="https://devman-011.github.io/LM-Logo/icons/tiktok.svg" readonly onclick="this.select()">
+        </div>
+      </div>
+      <div class="irow">
+        <img src="icons/x.svg" alt="X">
+        <div class="col">
+          <p class="name">X (Twitter)</p>
+          <input class="url" value="https://devman-011.github.io/LM-Logo/icons/x.svg" readonly onclick="this.select()">
         </div>
       </div>
     </div>
